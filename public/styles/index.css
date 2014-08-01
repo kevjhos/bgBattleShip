@@ -17,3 +17,74 @@ body {
 	-webkit-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
 }
+
+.tablero{
+    background-color: green;
+    position: relative;
+    top: -1.26em;
+    left: -0.7em;
+    margin-left: 1px;
+}
+.cuartel {
+    position: relative;
+    margin: 0;
+}
+.acorazado{
+
+    background-color: coral;
+    width: 8em;
+    height: 2em;
+    padding-right: 3px;
+    padding-bottom: 0px;
+
+    position: relative;
+    margin: 1.26em .7em;
+    float: left;
+    border: 1px dotted #b2b2b9;
+
+
+}
+.fragatas{
+
+    background-color: cadetblue;
+    width: 6em;
+    height: 2em;
+    padding-right: 2px;
+    padding-bottom: 0px;
+
+    left: 0px;
+    top: 0px;
+    margin: -2px;
+
+    position: relative;
+    margin: 1.26em .7em;
+    float: left;
+    border: 1px dotted #b2b2b9;
+
+}
+.submarino{
+    background-color: yellowgreen;
+
+    width: 4em;
+    height: 2em;
+    padding-right: 1px;
+    padding-bottom: 0px;
+
+    position: relative;
+    margin: 1.26em .7em;
+    float: left;
+    border: 1px dotted #b2b2b9;
+
+}
+.mina{
+    background-color: tomato;
+    width: 2em;
+    height: 2em;
+    padding-right: 0px;
+    padding-bottom: 0px;
+
+    position: relative;
+    margin: 1.26em .7em;
+    float: left;
+    border: 1px dotted #b2b2b9;
+}
