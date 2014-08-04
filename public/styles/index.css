@@ -88,3 +88,43 @@ body {
     float: left;
     border: 1px dotted #b2b2b9;
 }
+
+/* elementos  aparte */
+.mover{
+    border: 1px solid gold;
+    background-color: green;
+    border: 1px solid royalblue;
+    width: 252px;
+    height:60px;
+
+}
+.barco{
+    width: 80px;
+    height:55px;
+    background-color: #ffff00;
+    float: left;
+    margin: 2px;
+    text-align: center;
+}
+.cont_start{
+    border: 1px solid royalblue;
+    width: 500px;
+    height:80px;
+
+}
+.cont_end{
+    border: 1px solid orange;
+    border: 1px solid royalblue;
+    width: 290px;
+    height:162px;
+    padding: 2px;
+}
+
+.base{
+    float: left;
+    width:90px;
+    height:75px;
+    background-color: red;
+    margin: 3px;
+
+}
