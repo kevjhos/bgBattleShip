@@ -2,41 +2,96 @@
 <div id="pan_cuartel" name="pan_naves">
 
     <div class="jumbotron" >
-        <div class="cuartel clearfix" id="angar_4">
-            <div class="acorazado" data-drag="true" jqyoui-draggable="{animated:true}">
-                <div data-id="tam_4" data-lenght="4" data-position="h">
-                    <a href="#"><img src="../public/images/images_battle/proyecto_oficial/nav_3.gif"></a>
+        <div class="cont_start" id="angar_4">
+            <div id="acorazado" class="mover" data-tam="4" draggable="true" ondragstart="empezar_drag(event)" ondragend="terminar_drag(event)">
+                <div  id="101" name="101" class="barco" data-tam="4"  data-position="h">
+                    <img src="../public/images/images_battle/batt1.gif">
                 </div>
+                <div id="102" name="102" class="barco" data-tam="4"  data-position="h">
+                    <img src="../public/images/images_battle/batt2.gif">
+                </div>
+                <div id="103" name="103" class="barco" data-tam="4"  data-position="h">
+                    <img src="../public/images/images_battle/batt3.gif">
+                </div>
+                <div id="104" name="104" class="barco" data-tam="4"  data-position="h">
+                    <img src="../public/images/images_battle/batt5.gif">
+                </div>
+
             </div>
 
         </div>   <br>
 
-        <div class="cuartel clearfix" id="angar_3">
-            <div class="fragatas" data-drag="true" jqyoui-draggable="{animated:true}"><div data-id="tam_3" data-lenght="3" data-position="h"></div></div>
-            <div class="fragatas" data-drag="true" jqyoui-draggable="{animated:true}"><div data-id="tam_3" data-lenght="3" data-position="h"></div></div>
+        <div class="cont_start" id="angar_3">
+            <div id="fragata1" class="mover" data-tam="3" draggable="true" ondragstart="empezar_drag(event)" ondragend="terminar_drag(event)" >
+                <div id="110" name="110" class="barco" data-tam="3"  data-position="h">
+                    <img src="../public/images/images_battle/batt1.gif">
+                </div>
+                <div id="111" name="111" class="barco" data-tam="3"  data-position="h">
+                    <img src="../public/images/images_battle/batt2.gif">
+                </div>
+                <div id="112" name="112" class="barco" data-tam="3"  data-position="h">
+                    <img src="../public/images/images_battle/batt5.gif">
+                </div>
+            </div>
+            <div id="fragata2" class="mover" data-tam="3" draggable="true" ondragstart="empezar_drag(event)" ondragend="terminar_drag(event)">
+                <div id="113" name="113" class="barco" data-tam="3"  data-position="h">
+                    <img src="../public/images/images_battle/batt1.gif">
+                </div>
+                <div id="114" name="114" class="barco" data-tam="3"  data-position="h">
+                    <img src="../public/images/images_battle/batt2.gif">
+                </div>
+                <div id="115" name="115" class="barco" data-tam="3"  data-position="h">
+                    <img src="../public/images/images_battle/batt5.gif">
+                </div>
+            </div>
         </div>    <br>
 
-        <div class="cuartel clearfix" id="angar_2">
-            <div class="submarino" data-drag="true" jqyoui-draggable="{animated:true}"><div data-id="tam_2" data-lenght="2" data-position="h"></div></div>
-            <div class="submarino" data-drag="true" jqyoui-draggable="{animated:true}"><div data-id="tam_2" data-lenght="2" data-position="h"></div></div>
-            <div class="submarino" data-drag="true" jqyoui-draggable="{animated:true}"><div data-id="tam_2" data-lenght="2" data-position="h"></div></div>
+        <div class="cont_start" id="angar_2">
+            <div id="submarino1" class="mover" data-tam="2" draggable="true" ondragstart="empezar_drag(event)" ondragend="terminar_drag(event)">
+                <div id="120" name="120" class="barco" data-tam="2"  data-position="h">
+                    <img src="../public/images/images_battle/batt1.gif">
+                </div>
+                <div id="121" name="121" class="barco" data-tam="2"  data-position="h">
+                    <img src="../public/images/images_battle/batt5.gif">
+                </div>
+            </div>
+            <div id="submarino2" class="mover" data-tam="2" draggable="true" ondragstart="empezar_drag(event)" ondragend="terminar_drag(event)">
+                <div id="122" name="122" class="barco" data-tam="2"  data-position="h">
+                    <img src="../public/images/images_battle/batt1.gif">
+                </div>
+                <div id="123" name="123" class="barco" data-tam="2"  data-position="h">
+                    <img src="../public/images/images_battle/batt5.gif">
+                </div>
+            </div>
+            <div id="submarino3" class="mover" data-tam="2" draggable="true" ondragstart="empezar_drag(event)" ondragend="terminar_drag(event)">
+                <div id="124" name="124" class="barco" data-tam="2"  data-position="h">
+                    <img src="../public/images/images_battle/batt1.gif">
+                </div>
+                <div id="125" name="125" class="barco" data-tam="2"  data-position="h">
+                    <img src="../public/images/images_battle/batt5.gif">
+                </div>
+            </div>
         </div>  <br>
 
-        <div class="cuartel clearfix" id="angar_1">
-            <div class="mina" data-drag="true" jqyoui-draggable="{animate:true}">
-                <div data-id="tam_1" data-lenght="1" data-position="h" ><a href="javascript:void(0)"><img src="../public/images/images_battle/batt5.gif"></a>
+        <div class="cont_start" id="angar_1">
+            <div id="mina1" class="mover" data-tam="1" draggable="true" ondragstart="empezar_drag(event)" ondragend="terminar_drag(event)">
+                <div id="131" name="131" class="barco" data-tam="1"  data-position="h">
+                    <img src="../public/images/images_battle/batt5.gif">
                 </div>
             </div>
-            <div class="mina" data-drag="true" jqyoui-draggable="{animate:true}">
-                <div data-id="tam_1" data-lenght="1" data-position="h" data-drag="true" jqyoui-draggable="{animated:true}"><a href="javascript:void(0)"><img src="../public/images/images_battle/batt5.gif"></a>
+            <div id="mina2" class="mover" data-tam="1" draggable="true" ondragstart="empezar_drag(event)" ondragend="terminar_drag(event)">
+                <div id="132" name="132" class="barco" data-tam="1"  data-position="h">
+                    <img src="../public/images/images_battle/batt5.gif">
                 </div>
             </div>
-            <div class="mina" data-drag="true" jqyoui-draggable="{animate:true}">
-                <div data-id="tam_1" data-lenght="1" data-position="h" data-drag="true" jqyoui-draggable="{animated:true}"><a href="javascript:void(0)"><img src="../public/images/images_battle/batt5.gif"></a>
+            <div id="mina3" class="mover" data-tam="1" draggable="true" ondragstart="empezar_drag(event)" ondragend="terminar_drag(event)">
+                <div id="133" name="133" class="barco" data-tam="1"  data-position="h">
+                    <img src="../public/images/images_battle/batt5.gif">
                 </div>
             </div>
-            <div class="mina" data-drag="true" jqyoui-draggable="{animate:true}">
-                <div data-id="tam_1" data-lenght="1" data-position="h" data-drag="true" jqyoui-draggable="{animated:true}"><a href="javascript:void(0)"><img src="../public/images/images_battle/batt5.gif"></a>
+            <div id="mina4" class="mover" data-tam="1" draggable="true" ondragstart="empezar_drag(event)" ondragend="terminar_drag(event)">
+                <div id="134" name="134" class="barco" data-tam="1"  data-position="h">
+                    <img src="../public/images/images_battle/batt5.gif">
                 </div>
             </div>
         </div>
@@ -48,218 +103,218 @@
 <table>
 <tr>
   <td>
-  <div class="barquillo" data-drop="true"  data-jqyoui-options ng-model="list7" jqyoui-droppable style='height:50px; width:120px'> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list7" jqyoui-draggable ng-hide="!list7.title"  onDrop="alert(quedo ahi)">{{list7.title}}</div>
-  
+  <div class="barquillo" id="11" data-drop="true"  data-jqyoui-options ng-model="list7" jqyoui-droppable style='height:50px; width:120px'>
+
   </div>
   </td>
 
   <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable="{multiple:true, onOver:'highlightRow'}" style='height:50px; width:120px'>
+  <div class="barquillo" id="12" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable="{multiple:true, onOver:'highlightRow'}" style='height:50px; width:120px'>
   </div>
   </td>
 
   <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  <div class="barquillo" id="13" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
   </div>
   </td>
 
   <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  <div class="barquillo" id="14" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
   </div>
   </td>
 
   <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  <div class="barquillo" id="15" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  </div>
+  </td>
+</tr>
+
+
+<tr>
+  <td>
+  <div class="barquillo" id="21" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  </div>
+  </td>
+
+  <td>
+  <div class="barquillo" id="22" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  </div>
+  </td>
+
+  <td>
+  <div class="barquillo" id="23" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  </div>
+  </td>
+
+  <td>
+  <div class="barquillo" id="24" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  </div>
+  </td>
+
+  <td>
+  <div class="barquillo" id="25" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
   </div>
   </td>
 </tr>
 
 <tr>
   <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  <div class="barquillo" id="31" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
   </div>
   </td>
 
   <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  <div class="barquillo" id="32" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
   </div>
   </td>
 
   <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  <div class="barquillo" id="33" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
   </div>
   </td>
 
   <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  <div class="barquillo" id="34" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
   </div>
   </td>
 
   <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
-  </div>
-  </td>
-</tr>
-
-<tr>
-  <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
-  </div>
-  </td>
-
-  <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
-  </div>
-  </td>
-
-  <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
-  </div>
-  </td>
-
-  <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
-  </div>
-  </td>
-
-  <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  <div class="barquillo" id="35" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
   </div>
   </td>
 </tr>
 
 <tr>
   <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  <div class="barquillo" id="41" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
   </div>
   </td>
 
   <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  <div class="barquillo" id="42" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
   </div>
   </td>
 
   <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  <div class="barquillo" id="43" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
   </div>
   </td>
 
   <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  <div class="barquillo" id="44" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
   </div>
   </td>
 
   <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
-  </div>
-  </td>
-</tr>
-
-<tr>
-  <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
-  </div>
-  </td>
-
-  <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
-  </div>
-  </td>
-
-  <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
-  </div>
-  </td>
-
-  <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
-  </div>
-  </td>
-
-  <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  <div class="barquillo"  id="45"data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
   </div>
   </td>
 </tr>
 
 <tr>
   <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  <div class="barquillo" id="51" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
   </div>
   </td>
 
   <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  <div class="barquillo" id="52" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
   </div>
   </td>
 
   <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  <div class="barquillo" id="53" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
   </div>
   </td>
 
   <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  <div class="barquillo" id="54" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
   </div>
   </td>
 
   <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
-  </div>
-  </td>
-</tr>
-
-<tr>
-  <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
-  </div>
-  </td>
-
-  <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
-  </div>
-  </td>
-
-  <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
-  </div>
-  </td>
-
-  <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
-  </div>
-  </td>
-
-  <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  <div class="barquillo" id="55" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
   </div>
   </td>
 </tr>
 
 <tr>
   <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  <div class="barquillo" id="61" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
   </div>
   </td>
 
   <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  <div class="barquillo" id="62" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
   </div>
   </td>
 
   <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  <div class="barquillo" id="63" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
   </div>
   </td>
 
   <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  <div class="barquillo" id="64" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
   </div>
   </td>
 
   <td>
-  <div class="barquillo" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  <div class="barquillo" id="65" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  </div>
+  </td>
+</tr>
+
+<tr>
+  <td>
+  <div class="barquillo" id="71" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  </div>
+  </td>
+
+  <td>
+  <div class="barquillo" id="72" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  </div>
+  </td>
+
+  <td>
+  <div class="barquillo" id="73" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  </div>
+  </td>
+
+  <td>
+  <div class="barquillo" id="74" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  </div>
+  </td>
+
+  <td>
+  <div class="barquillo" id="75" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  </div>
+  </td>
+</tr>
+
+<tr>
+  <td>
+  <div class="barquillo" id="81" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  </div>
+  </td>
+
+  <td>
+  <div class="barquillo" id="82" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  </div>
+  </td>
+
+  <td>
+  <div class="barquillo" id="83" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  </div>
+  </td>
+
+  <td>
+  <div class="barquillo" id="84" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
+  </div>
+  </td>
+
+  <td>
+  <div class="barquillo" id="85" data-drop="true" data-drag="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px; width:120px'>
   </div>
   </td>
 </tr>
