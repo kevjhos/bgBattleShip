@@ -1,391 +1,395 @@
+
+<!--<button ng-click="count = count + 1" ng-init="count=0">
+    Increment
+</button>
+count: {{ count }}-->
 <table ng-controller="tableController">
-
 <tr id="row1">
-  <td>
-  <div tipo="cel11" class="celda" data-drop="true"  data-jqyoui-options ng-model="list11" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        
-  </div>
-  </td>
-  <td>
-  <div tipo="cel12" class="celda" data-drop="true"  data-jqyoui-options ng-model="list2" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        
-  </div>
-  </td>
+    <td ng-click="cambiar()">
+        <div  ng-click="cambiar()" ng-hide="atacar" ng-class="{appear:atacar, disappear:!atacar}" pos="10" ng-model="atacar" class="celda" data-drop="true"  data-jqyoui-options ng-model="list11" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
 
-  <td>
-  <div tipo="cel13" class="celda" data-drop="true"  data-jqyoui-options ng-model="list3" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        
-  </div>
-  </td>
-  <td>
-  <div tipo="cel14" class="celda" data-drop="true"  data-jqyoui-options ng-model="list12" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
+        </div>
+    </td>
+    <td ng-click="cambiar()">
+        <div ng-click="cambiar()" ng-hide="atacar" pos="11" class="celda" data-drop="true"  data-jqyoui-options ng-model="atacar" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
 
-  <td>
-  <div tipo="cel16" class="celda" data-drop="true"  data-jqyoui-options ng-model="list12" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list12" jqyoui-draggable ng-hide="!list12.title">{{list12.title}}</div>
-  </div>
-  </td>
+        </div>
+    </td>
 
-  <td>
-  <div tipo="cel17" class="celda" data-drop="true"  data-jqyoui-options ng-model="list7" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list12" jqyoui-draggable ng-hide="!list12.title">{{list12.title}}</div>
-  </div>
-  </td>
+    <td ng-click="cambiar()">
+        <div ng-click="cambiar()" ng-show="atacar" pos="12" class="celda" data-drop="true"  data-jqyoui-options ng-model="list3" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
 
-  <td>
-  <div tipo="cel18" class="celda" data-drop="true"  data-jqyoui-options ng-model="list12" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list12" jqyoui-draggable ng-hide="!list12.title">{{list12.title}}</div>
-  </div>
-  </td>
+        </div>
+    </td>
+    <td ng-click="cambiar()">
+        <div ng-click="cambiar()" ng-show="atacar" ng-show="atacar" pos="13" class="celda" data-drop="true"  data-jqyoui-options ng-model="list12" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
 
-  <td>
-  <div tipo="cel19" class="celda" data-drop="true"  data-jqyoui-options ng-model="list7" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list12" jqyoui-draggable ng-hide="!list13.title">{{list13.title}}</div>
-  </div>
-  </td>
+        </div>
+    </td>
+    <td ng-click="cambiar()">
+        <div pos="14" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
 
-  <td>
-  <div tipo="cel20" class="celda" data-drop="true"  data-jqyoui-options ng-model="list" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list14" jqyoui-draggable ng-hide="!list14.title">{{list14.title}}</div>
-  </div>
-  </td></tr>
+        </div>
+    </td>
+
+    <td ng-click="cambiar()">
+        <div pos="15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list12" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list12" jqyoui-draggable ng-hide="!list12.title">{{list12.title}}</div>
+        </div>
+    </td>
+
+    <td ng-click="cambiar()">
+        <div pos="16" class="celda" data-drop="true"  data-jqyoui-options ng-model="list7" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list12" jqyoui-draggable ng-hide="!list12.title">{{list12.title}}</div>
+        </div>
+    </td>
+
+    <td>
+        <div pos="17" class="celda" data-drop="true"  data-jqyoui-options ng-model="list12" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list12" jqyoui-draggable ng-hide="!list12.title">{{list12.title}}</div>
+        </div>
+    </td>
+
+    <td>
+        <div pos="18" class="celda" data-drop="true"  data-jqyoui-options ng-model="list7" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list12" jqyoui-draggable ng-hide="!list13.title">{{list13.title}}</div>
+        </div>
+    </td>
+
+    <td>
+        <div pos="19" class="celda" data-drop="true"  data-jqyoui-options ng-model="list" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list14" jqyoui-draggable ng-hide="!list14.title">{{list14.title}}</div>
+        </div>
+    </td></tr>
 
 
 <tr id="row2">
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
+    <td>
+        <div pos="20" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="21" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="22" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="23" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="24" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="25" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="26" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="27" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="28" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="29" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
 
 </tr>
 
 <tr id="row3">
-  <td>
-  <div tipo="cel11" class="celda" data-drop="true"  data-jqyoui-options ng-model="list17" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list11" jqyoui-draggable ng-hide="!list17.title">{{list17.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel12" class="celda" data-drop="true"  data-jqyoui-options ng-model="list2" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list11" jqyoui-draggable ng-hide="!list30.title">{{list30.title}}</div>
-  </div>
-  </td>
+    <td>
+        <div pos="30" class="celda" data-drop="true"  data-jqyoui-options ng-model="list17" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list11" jqyoui-draggable ng-hide="!list17.title">{{list17.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="31" class="celda" data-drop="true"  data-jqyoui-options ng-model="list2" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list11" jqyoui-draggable ng-hide="!list30.title">{{list30.title}}</div>
+        </div>
+    </td>
 
-  <td>
-  <div tipo="cel13" class="celda" data-drop="true"  data-jqyoui-options ng-model="list18" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list11" jqyoui-draggable ng-hide="!list18.title">{{list18.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel14" class="celda" data-drop="true"  data-jqyoui-options ng-model="list12" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list11" jqyoui-draggable ng-hide="!list31.title">{{list31.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list19" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list19.title">{{list19.title}}</div>
-  </div>
-  </td>
+    <td>
+        <div pos="32" class="celda" data-drop="true"  data-jqyoui-options ng-model="list18" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list11" jqyoui-draggable ng-hide="!list18.title">{{list18.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="33" class="celda" data-drop="true"  data-jqyoui-options ng-model="list12" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list11" jqyoui-draggable ng-hide="!list31.title">{{list31.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="34" class="celda" data-drop="true"  data-jqyoui-options ng-model="list19" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list19.title">{{list19.title}}</div>
+        </div>
+    </td>
 
-  <td>
-  <div tipo="cel16" class="celda" data-drop="true"  data-jqyoui-options ng-model="list12" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list12" jqyoui-draggable ng-hide="!list34.title">{{list34.title}}</div>
-  </div>
-  </td>
+    <td>
+        <div pos="35" class="celda" data-drop="true"  data-jqyoui-options ng-model="list12" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list12" jqyoui-draggable ng-hide="!list34.title">{{list34.title}}</div>
+        </div>
+    </td>
 
-  <td>
-  <div tipo="cel17" class="celda" data-drop="true"  data-jqyoui-options ng-model="list7" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list12" jqyoui-draggable ng-hide="!list34.title">{{list34.title}}</div>
-  </div>
-  </td>
+    <td>
+        <div pos="36" class="celda" data-drop="true"  data-jqyoui-options ng-model="list7" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list12" jqyoui-draggable ng-hide="!list34.title">{{list34.title}}</div>
+        </div>
+    </td>
 
-  <td>
-  <div tipo="cel18" class="celda" data-drop="true"  data-jqyoui-options ng-model="list12" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list12" jqyoui-draggable ng-hide="!list34.title">{{list34.title}}</div>
-  </div>
-  </td>
+    <td>
+        <div pos="37" class="celda" data-drop="true"  data-jqyoui-options ng-model="list12" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list12" jqyoui-draggable ng-hide="!list34.title">{{list34.title}}</div>
+        </div>
+    </td>
 
-  <td>
-  <div tipo="cel19" class="celda" data-drop="true"  data-jqyoui-options ng-model="list23" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list12" jqyoui-draggable ng-hide="!list23.title">{{list23.title}}</div>
-  </div>
-  </td>
+    <td>
+        <div pos="38" class="celda" data-drop="true"  data-jqyoui-options ng-model="list23" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list12" jqyoui-draggable ng-hide="!list23.title">{{list23.title}}</div>
+        </div>
+    </td>
 
-  <td>
-  <div tipo="cel20" class="celda" data-drop="true"  data-jqyoui-options ng-model="list" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list14" jqyoui-draggable ng-hide="!list14.title">{{list14.title}}</div>
-  </div>
-  </td>
+    <td>
+        <div pos="39" class="celda" data-drop="true"  data-jqyoui-options ng-model="list" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list14" jqyoui-draggable ng-hide="!list14.title">{{list14.title}}</div>
+        </div>
+    </td>
 
 </tr>
 
 <tr id="row4">
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list17" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list17.title">{{list17.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list18" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list18.title">{{list18.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list20" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list20.title">{{list20.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list23" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list23.title">{{list23.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
+    <td>
+        <div pos="40" class="celda" data-drop="true"  data-jqyoui-options ng-model="list17" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list17.title">{{list17.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="41" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="42" class="celda" data-drop="true"  data-jqyoui-options ng-model="list18" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list18.title">{{list18.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="43" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="44" class="celda" data-drop="true"  data-jqyoui-options ng-model="list20" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list20.title">{{list20.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="45" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="46" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="47" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="48" class="celda" data-drop="true"  data-jqyoui-options ng-model="list23" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list23.title">{{list23.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="49" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
 
 </tr>
 
 <tr id="row5">
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list23" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list23.title">{{list23.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
+    <td>
+        <div pos="50" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="51" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="52" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="53" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="54" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="55" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="56" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="57" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="58" class="celda" data-drop="true"  data-jqyoui-options ng-model="list23" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list23.title">{{list23.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="59" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
 
 </tr>
 
 <tr id="row6">
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list21" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list21.title">{{list21.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list24" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list24.title">{{list24.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list22" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list22.title">{{list22.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
+    <td>
+        <div pos="60" class="celda" data-drop="true"  data-jqyoui-options ng-model="list21" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list21.title">{{list21.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="61" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="62" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="63" class="celda" data-drop="true"  data-jqyoui-options ng-model="list24" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list24.title">{{list24.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="64" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="65" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="66" class="celda" data-drop="true"  data-jqyoui-options ng-model="list22" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list22.title">{{list22.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="67" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="68" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="69" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
 
 </tr>
 
 <tr id="row7">
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list25" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
-  <td>
-  <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list25" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
-  </div>
-  </td>
+    <td>
+        <div pos="70" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="71" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="72" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="73" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="74" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="75" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="76" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="77" class="celda" data-drop="true"  data-jqyoui-options ng-model="list15" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="78" class="celda" data-drop="true"  data-jqyoui-options ng-model="list25" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
+    <td>
+        <div pos="79" class="celda" data-drop="true"  data-jqyoui-options ng-model="list25" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+            <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
+        </div>
+    </td>
 
 </tr>
 

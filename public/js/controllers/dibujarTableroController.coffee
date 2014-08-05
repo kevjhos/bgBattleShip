@@ -31,25 +31,30 @@ define ['controllers', 'exampleResource', 'ejemDirectiva'], (controllers) -> #es
     $scope.usuario
     $scope.password
     $scope.mensaje = (text) ->
-     alert text
+      alert text
     $scope.prueba = (u,p) ->
-     alert "registering user..."+u+"with password..."+p
-    
-     
-     
+      alert "registering user..."+u+"with password..."+p
 
-    
+    $scope.atacar="false"
+
+    $scope.cambiar=->
+      if $scope.atacar
+        $scope.atacar="false"
+      else
+        $scope.atacar="true"
+
+
 
     #resourceExample.get (serverResponse) ->
-     # if serverResponse.data?   
-      	
-      	# ... unless var? -->> a no ser que no sea nulo
-      	# var? -->> pregunta si es nulo
-      
-      #alert "#{serverResponse.name} is #{serverResponse.age} years old"
+    # if serverResponse.data?
+
+    # ... unless var? -->> a no ser que no sea nulo
+    # var? -->> pregunta si es nulo
+
+    #alert "#{serverResponse.name} is #{serverResponse.age} years old"
     #, (error) ->
     #  alert error
 
-    
+
 
   ]
