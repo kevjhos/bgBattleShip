@@ -1,0 +1,61 @@
+<script type="text/ng-template" id="home.html">
+        <h1>Home</h1>
+        <p>Welcome to this authentication demo with AngularJS!</p>
+      </script>
+
+      <script type="text/ng-template" id="admin.html">
+        <h1>Admin</h1>
+        <p>Welcome to the admin screen!</p>
+      </script>
+
+      <script type="text/ng-template" id="fail.html">
+        <h1>Login</h1>
+        <p>Access denied! Please log in.</p>
+        <small>Return URL: {{returnUrl}}</small>
+      </script>
+
+      <script type="text/ng-template" id="login.html" >
+              <div class="containerlogin" style="display: none;">
+                  <div class="overlay loading">
+                    <i class="fa fa-spinner fa-5x fa-spin"></i><br/>
+                    <h1>Loading...</h1>
+                  </div>
+              </div>
+                
+                <div class="containerlogin">
+                  <div class="overlay">
+                    <h1 class="header">
+                      <span class="fa-stack">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-fighter-jet fa-stack-1x fa-inverse rotate-45-left"></i>
+                      </span>
+                      BattleShip2014 BG.Corp
+                    </h1>
+                
+                    <form class="form-signin" role="form" ng-controller="tableController">
+                      <h3 class="form-signin-heading">Ingrese su contraseña</h3>
+                
+                      <div class="input-group margin-bottom-sm">
+                        <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                        <input class="form-control" type="text" ng-model="usuario" placeholder="Usuario" required autofocus>
+                      </div>
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-unlock-alt fa-fw"></i></span>
+                        <input class="form-control" type="password" ng-model="password" placeholder="Clave" required >
+                      </div>
+                
+                      <div>
+                        <label ng-click='prueba(usuario,password)' class="checkbox" title="Check this to have your username saved for the next time you sign in." >
+                          <input  type="checkbox" value="remember-me"> Recordar
+                        </label>
+                      </div>
+                      <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click='mensaje("user="+usuario+" pass="+password)' >Entrar </button>
+                    </form>
+                
+                    <div class="footer">
+                      <strong>Version: </strong>0.0.1.1245<em> (<abbr title="This version may have bugs or unfinished features.">&beta;eta</abbr>)</em>
+                      <span class="pull-right">&copy; 2014 <a href="http://www.google.com" target="_blank" title="Company">Company</a></span>
+                    </div>
+                  </div>
+                </div>
+      </script>>

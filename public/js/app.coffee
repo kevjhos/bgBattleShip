@@ -10,6 +10,8 @@ define [
  "services"
  "ngDragDrop"
  "dibujarTableroController"
+ "addUserController"
+ 
 ], (angular) ->
   battleShipsApp = angular.module "battleShipsApp", [
     "ngRoute"
@@ -18,6 +20,7 @@ define [
     "battleShipsDirectives"
     "battleShipsServices"
     "ngDragDrop"
+
   ]
 
   # Sets the URL routes for partial views.
@@ -26,6 +29,42 @@ define [
   , ($routeProvider) ->
       $routeProvider.when("/",
         templateUrl: "main.html"
+      ).otherwise
+        redirectTo: "/main.html"
+  ]
+
+  battleShipsApp.config [
+    "$routeProvider"
+  , ($routeProvider) ->
+      $routeProvider.when("/home",
+        templateUrl: "home.html"
+      ).otherwise
+        redirectTo: "/main.html"
+  ]
+
+  battleShipsApp.config [
+    "$routeProvider"
+  , ($routeProvider) ->
+      $routeProvider.when("/admin",
+        templateUrl: "admin.html"
+      ).otherwise
+        redirectTo: "/main.html"
+  ]
+
+  battleShipsApp.config [
+    "$routeProvider"
+  , ($routeProvider) ->
+      $routeProvider.when("/login",
+        templateUrl: "login.html"
+      ).otherwise
+        redirectTo: "/main.html"
+  ]
+
+  battleShipsApp.config [
+    "$routeProvider"
+  , ($routeProvider) ->
+      $routeProvider.when("/adduser",
+        templateUrl: "adduser.html"
       ).otherwise
         redirectTo: "/main.html"
   ]

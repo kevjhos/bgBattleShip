@@ -20,14 +20,17 @@ require.config
   #Angular controllers
     exampleController: 'controllers/persons-controller'
     dibujarTableroController: 'controllers/dibujarTableroController'
+    addUserController: 'controllers/adduser-controller'
 
   #Angular services
     exampleService: 'services/example-service'
     exampleResource: 'services/example-resource'
+    playerService: 'services/players-service'
 
   #Angular directives
     exampleDirective: 'directives/example-directive'
     boardDirective: 'directives/board-directive'
+    ejemDirectiva: 'directives/ejemdirectiva'
 
 
   #CSS styles
