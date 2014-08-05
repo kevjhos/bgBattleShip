@@ -10,6 +10,7 @@ define [
  "services"
  "ngDragDrop"
  "dibujarTableroController"
+ "generarAleatorio"
  "addUserController"
  
 ], (angular) ->
