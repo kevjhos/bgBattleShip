@@ -1,7 +1,41 @@
 <div class="jumbotron">
   <h1>BattleShip: batalla de barcos</h1>
-  <div ng-controller="tableController">
-        <canvas id="tablero" width="300" height="300" x="50" y="50" board>Tablero</canvas>
+  <div ng-controller="tableController">        
+		<canvas onclick=alert("position....") id="tablero" width="350" height="400" x="4" y="4" board>Tablero</canvas>
+
+        <canvas id="tablero2" width="350" height="400" x="5" y="7" board>Tablero2</canvas>
+      <p>Estamos {{hola}}, esperamos su comprension </p>
+
+      <div class="btn btn-primary"
+           data-drag="true"
+           data-jqyoui-options="optionList1"
+           ng-model="list1"
+           jqyoui-draggable="{animate:true}"
+           ng-repeat="title in list1"
+           ng-hide="!list1.title">
+          {{list1.title}}
+      </div>
+      <div class="btn btn-primary"
+           data-drag="true"
+           data-jqyoui-options="{revert: 'invalid'}"
+           ng-model="list2"
+           jqyoui-draggable="{animate:true}"
+           ng-hide="!list2.title">
+          {{list2.title}}
+      </div>
+      <div class="thumbnail"
+           data-drop="true"
+           data-jqyoui-options ng-model="list3"
+           jqyoui-droppable="{multiple:true}"
+           style='height:50px;'>
+          <div class="btn btn-success"
+               data-drag="false"
+               data-jqyoui-options
+               ng-model="list3"
+               jqyoui-draggable
+               ng-hide="!list3.title">{{list3.title}}
+          </div>
+      </div>
       <p>Estamos {{hola}}, esperamos su comprension </p>
 
       <div ng-include="'/barco.html'" scope="" onload=""></div>
