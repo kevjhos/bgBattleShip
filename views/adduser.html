@@ -1,0 +1,43 @@
+<div>
+<div class="containeradduser">
+                  <div class="overlay">
+                    <h1 class="header">
+                      <span class="fa-stack">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-fighter-jet fa-stack-1x fa-inverse rotate-45-left"></i>
+                      </span>
+                      Agregar Player BattleShip2014 BG.Corp
+                    </h1>
+                
+                    <form class="form-signin" role="form" ng-controller="addUserController" >
+                      <h3 ng-click='alert(newusernom+newuserlast+newusercode)' class="form-signin-heading">Ingrese datos</h3>
+                
+                      <div class="input-group margin-bottom-sm">
+                        <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                        <input class="form-control" type="text" ng-model="newusernom" placeholder="Nombre Usuario" required autofocus>
+                      </div>
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-unlock-alt fa-fw"></i></span>
+                        <input class="form-control" type="text" ng-model="newuserlast" placeholder="Apellido Usuario" required >
+                      </div>
+
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-unlock-alt fa-fw"></i></span>
+                        <input class="form-control" type="text" ng-model="newusercode" placeholder="Codigo Usuario" required >
+                      </div>
+                
+                      </div>
+                      <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click='alert(newusernom+newuserlast+newusercode)' >Agregar Usuario </button>
+                    </form>
+                    
+                  </div>
+                </div>
+                <div class="mostrarusers"> 
+                <div ng-repeat="person in people">
+                    <p>{{person.firstName}}</p>
+                    <p>{{person.lastName}}</p>
+                    <p>{{person.personId}}</p>
+                </div>
+                </div>
+
+</div>
