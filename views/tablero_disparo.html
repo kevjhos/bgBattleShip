@@ -1,348 +1,25 @@
-
-<link rel="stylesheet" href="../public/styles/index.css">
-<script type="text/javascript" src="../public/js/drag_drop.js"></script>
-<div class="posicion">
-<div id="pan_cuartel" name="pan_naves" class="cuartel" style="float: left">
-
-
-    <div class="cont_start" id="angar_4">
-        <div id="acorazado" class="acorazado" data-tam="4" draggable="true" ondragstart="empezar_drag(event)" ondragend="terminar_drag(event)">
-            <div  id="101" name="101" class="barco" data-tam="4"  data-position="h">
-                <img draggable="false" src="../public/images/images_battle/batt1.gif">
-            </div>
-            <div id="102" name="102" class="barco" data-tam="4"  data-position="h">
-                <img draggable="false" src="../public/images/images_battle/batt2.gif">
-            </div>
-            <div id="103" name="103" class="barco" data-tam="4"  data-position="h">
-                <img draggable="false" src="../public/images/images_battle/batt3.gif">
-            </div>
-            <div id="104" name="104" class="barco" data-tam="4"  data-position="h">
-                <img draggable="false" src="../public/images/images_battle/batt5.gif">
-            </div>
-
-        </div>
-
-    </div>   <br>
-
-    <div class="cont_start" id="angar_3">
-        <div id="fragata1" class="fragata" data-tam="3" draggable="true" ondragstart="empezar_drag(event)" ondragend="terminar_drag(event)" >
-            <div id="110" name="110" class="barco" data-tam="3"  data-position="h">
-                <img draggable="false" src="../public/images/images_battle/batt1.gif">
-            </div>
-            <div id="111" name="111" class="barco" data-tam="3"  data-position="h">
-                <img draggable="false" src="../public/images/images_battle/batt2.gif">
-            </div>
-            <div id="112" name="112" class="barco" data-tam="3"  data-position="h">
-                <img draggable="false" src="../public/images/images_battle/batt5.gif">
-            </div>
-        </div>
-        <div id="fragata2" class="fragata" data-tam="3" draggable="true" ondragstart="empezar_drag(event)" ondragend="terminar_drag(event)">
-            <div id="113" name="113" class="barco" data-tam="3"  data-position="h">
-                <img draggable="false" src="../public/images/images_battle/batt1.gif">
-            </div>
-            <div id="114" name="114" class="barco" data-tam="3"  data-position="h">
-                <img draggable="false" src="../public/images/images_battle/batt2.gif">
-            </div>
-            <div id="115" name="115" class="barco" data-tam="3"  data-position="h">
-                <img draggable="false" src="../public/images/images_battle/batt5.gif">
-            </div>
-        </div>
-    </div>    <br>
-
-    <div class="cont_start" id="angar_2">
-        <div id="submarino1" class="submarino" data-tam="2" draggable="true" ondragstart="empezar_drag(event)" ondragend="terminar_drag(event)">
-            <div id="120" name="120" class="barco" data-tam="2"  data-position="h">
-                <img draggable="false" src="../public/images/images_battle/batt1.gif">
-            </div>
-            <div id="121" name="121" class="barco" data-tam="2"  data-position="h">
-                <img draggable="false" src="../public/images/images_battle/batt5.gif">
-            </div>
-        </div>
-        <div id="submarino2" class="submarino" data-tam="2" draggable="true" ondragstart="empezar_drag(event)" ondragend="terminar_drag(event)">
-            <div id="122" name="122" class="barco" data-tam="2"  data-position="h">
-                <img draggable="false" src="../public/images/images_battle/batt1.gif">
-            </div>
-            <div id="123" name="123" class="barco" data-tam="2"  data-position="h">
-                <img draggable="false" src="../public/images/images_battle/batt5.gif">
-            </div>
-        </div>
-        <div id="submarino3" class="submarino" data-tam="2" draggable="true" ondragstart="empezar_drag(event)" ondragend="terminar_drag(event)">
-            <div id="124" name="124" class="barco" data-tam="2"  data-position="h">
-                <img draggable="false" src="../public/images/images_battle/batt1.gif">
-            </div>
-            <div id="125" name="125" class="barco" data-tam="2"  data-position="h">
-                <img draggable="false" src="../public/images/images_battle/batt5.gif">
-            </div>
-        </div>
-    </div>  <br>
-
-    <div class="cont_start" id="angar_1">
-        <div id="mina1" class="mina" data-tam="1" draggable="true" ondragstart="empezar_drag(event)" ondragend="terminar_drag(event)">
-            <div id="131" name="131" class="barco" data-tam="1"  data-position="h">
-                <img draggable="false" src="../public/images/images_battle/batt5.gif">
-            </div>
-        </div>
-        <div id="mina2" class="mina" data-tam="1" draggable="true" ondragstart="empezar_drag(event)" ondragend="terminar_drag(event)">
-            <div id="132" name="132" class="barco" data-tam="1"  data-position="h">
-                <img draggable="false" src="../public/images/images_battle/batt5.gif">
-            </div>
-        </div>
-        <div id="mina3" class="mina" data-tam="1" draggable="true" ondragstart="empezar_drag(event)" ondragend="terminar_drag(event)">
-            <div id="133" name="133" class="barco" data-tam="1"  data-position="h">
-                <img draggable="false" src="../public/images/images_battle/batt5.gif">
-            </div>
-        </div>
-        <div id="mina4" class="mina" data-tam="1" draggable="true" ondragstart="empezar_drag(event)" ondragend="terminar_drag(event)">
-            <div id="134" name="134" class="barco" data-tam="1"  data-position="h">
-                <img draggable="false" src="../public/images/images_battle/batt5.gif">
-            </div>
-        </div>
-    </div>
-    <!--<script type="text/javascript">generar_tablero(20,15);</script>-->
-
-
-</div>
-<div class="" style="float: left">
-<table>
-<tr>
-    <td>
-        <div class="barquillo" id="11" ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-
-        </div>
-    </td>
-
-    <td>
-        <div class="barquillo" id="12" ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-
-    <td>
-        <div class="barquillo" id="13" ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-
-    <td>
-        <div class="barquillo" id="14"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-
-    <td>
-        <div class="barquillo" id="15"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-</tr>
-
-
-<tr>
-    <td>
-        <div class="barquillo" id="21"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-
-    <td>
-        <div class="barquillo" id="22"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-
-    <td>
-        <div class="barquillo" id="23"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-
-    <td>
-        <div class="barquillo" id="24"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-
-    <td>
-        <div class="barquillo" id="25"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-</tr>
-
-<tr>
-    <td>
-        <div class="barquillo" id="31"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-
-    <td>
-        <div class="barquillo" id="32"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-
-    <td>
-        <div class="barquillo" id="33"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-
-    <td>
-        <div class="barquillo" id="34"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-
-    <td>
-        <div class="barquillo" id="35"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-</tr>
-
-<tr>
-    <td>
-        <div class="barquillo" id="41"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-
-    <td>
-        <div class="barquillo" id="42"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-
-    <td>
-        <div class="barquillo" id="43"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-
-    <td>
-        <div class="barquillo" id="44"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-
-    <td>
-        <div class="barquillo"  id="45" ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-</tr>
-
-<tr>
-    <td>
-        <div class="barquillo" id="51"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-
-    <td>
-        <div class="barquillo" id="52"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-
-    <td>
-        <div class="barquillo" id="53"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-
-    <td>
-        <div class="barquillo" id="54"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-
-    <td>
-        <div class="barquillo" id="55"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-</tr>
-
-<tr>
-    <td>
-        <div class="barquillo" id="61"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-
-    <td>
-        <div class="barquillo" id="62"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-
-    <td>
-        <div class="barquillo" id="63"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-
-    <td>
-        <div class="barquillo" id="64"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-
-    <td>
-        <div class="barquillo" id="65"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-</tr>
-
-<tr>
-    <td>
-        <div class="barquillo" id="71"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-
-    <td>
-        <div class="barquillo" id="72"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-
-    <td>
-        <div class="barquillo" id="73"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-
-    <td>
-        <div class="barquillo" id="74"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-
-    <td>
-        <div class="barquillo" id="75"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-</tr>
-
-<tr>
-    <td>
-        <div class="barquillo" id="81"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-
-    <td>
-        <div class="barquillo" id="82"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-
-    <td>
-        <div class="barquillo" id="83"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-
-    <td>
-        <div class="barquillo" id="84"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-
-    <td>
-        <div class="barquillo" id="85"  ondragenter="return entrar(event)" ondragover="return sobre(event)" ondragleave="return dejar(event)" ondrop="return soltar(event)" style='height:50px; width:120px'>
-        </div>
-    </td>
-
 <table ng-controller="tableController">
 
 <tr id="row1">
   <td>
   <div tipo="cel11" class="celda" data-drop="true"  data-jqyoui-options ng-model="list11" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list11" jqyoui-draggable ng-hide="!list11.title">{{list11.title}}</div>
+        
   </div>
   </td>
   <td>
   <div tipo="cel12" class="celda" data-drop="true"  data-jqyoui-options ng-model="list2" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list11" jqyoui-draggable ng-hide="!list11.title">{{list11.title}}</div>
+        
   </div>
   </td>
 
   <td>
   <div tipo="cel13" class="celda" data-drop="true"  data-jqyoui-options ng-model="list3" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list11" jqyoui-draggable ng-hide="!list11.title">{{list11.title}}</div>
+        
   </div>
   </td>
   <td>
   <div tipo="cel14" class="celda" data-drop="true"  data-jqyoui-options ng-model="list12" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list11" jqyoui-draggable ng-hide="!list11.title">{{list11.title}}</div>
+        
   </div>
   </td>
   <td>
@@ -701,22 +378,15 @@
   </td>
   <td>
   <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list25" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list25.title">{{list25.title}}</div>
+        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
   </div>
   </td>
   <td>
   <div tipo="cel15" class="celda" data-drop="true"  data-jqyoui-options ng-model="list25" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva> 
-        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list25.title">{{list25.title}}</div>
+        <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list16" jqyoui-draggable ng-hide="!list16.title">{{list16.title}}</div>
   </div>
   </td>
-
 
 </tr>
 
 </table>
-</div>
-
-
-</div>
-
-

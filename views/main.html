@@ -1,18 +1,33 @@
 <div class="jumbotron">
   <h1>BattleShip: batalla de barcos</h1>
   <div ng-controller="tableController">
-        <canvas id="tablero" width="300" height="300" x="50" y="50" board>Tablero</canvas>
+ 
+  <ul>
+        <li><a href="#/home">Home</a></li>
+        <li><a href="#/admin">Admin</a></li>
+        <li><a href="#/login">Sign In</a></li>
+        <li><a href="#/adduser">Agregar Usuario <INS></INS></a></li>
+      </ul>
+        <canvas id="tablero" width="300" height="150" x="50" y="50" board>Tablero</canvas>
       <p>Estamos {{hola}}, esperamos su comprension </p>
 
+        <div ng-include="'menu.html'" scope="" onload=""></div>
+          <div ng-init="checked2=false">
+              <label>
+                <input type="checkbox" ng-model="checked2" style="float:left; margin-right:10px;"> Tablero para Disparar...
+              </label>
+          <div class="check-element sample-show-hide" ng-show="checked2" style="clear:both;">
+            <div ng-include="'/tablero_disparo.html'" scope="" onload=""></div>
+            </div>
+          </div>
+      <div ng-include="'/extra.html'" scope="" onload=""></div>
       <div ng-include="'/barco.html'" scope="" onload=""></div>
       
-
-      <div ng-include="'/extra.html'" scope="" onload=""></div>
       
 
   </div>
 
-  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+  <p><a class="btn btn-lg btn-success" ng-href="#">Bienvenido...!!<span class="glyphicon glyphicon-ok"></span></a></p>
 </div>
 <div class="row marketing">
   <h4>HTML5 Boilerplate</h4>
