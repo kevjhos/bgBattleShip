@@ -1,0 +1,28 @@
+ng-if muestra la etiketa donde se encuentra si cumple verdadero
+      tambien reinicia el comportamiento de la directiva
+
+ng-show muestra tal elemento solo si 
+ng-click llama a una funcion para que pueda ser ejecutada
+
+sintaxis:
+ng-show="variable_cambiar"  ng-if="variable==1"
+ng-hide="!list11.title"  >> list11.title no tiene elemento
+
+CONTROLLER: 10.titulo="algo", 11.titulo=""
+
+
+UNIDAD:
+<div ng-model=10>
+
+CELDA:
+<div ng model=11
+    <div ng-model=11 ng-hide=!11.titulo>{{11.titulo}}</div>
+
+
+11 12 13 14   segun nrode-pieza lo repite a lo horizontal por defecto
+21 22 23 24  
+31 32 33 34
+41 42 43 44
+
+coffee script style guide
+

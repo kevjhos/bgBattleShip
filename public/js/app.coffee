@@ -38,6 +38,7 @@ define [
   , ($routeProvider) ->
       $routeProvider.when("/home",
         templateUrl: "home.html"
+         
       ).otherwise
         redirectTo: "/main.html"
   ]

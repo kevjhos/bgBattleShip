@@ -2,6 +2,7 @@ define ['controllers', 'exampleResource', 'ejemDirectiva'], (controllers) -> #es
   controllers.controller 'tableController', ['$scope', 'resourceExample', ($scope, resourceExample)->
 
     $scope.hola='Dibujando Tablero'
+    #$scope.list100 = exampleServices.variable1(2) 'exampleService', exampleServices
     $scope.list1 = {id:'1',title: 'BrcA',tipo:'A', piezas:'4'}
     $scope.list2 = {id:'2',title: 'BrcB',tipo:'B', piezas:'3'}
     $scope.list3 = {id:'3',title: 'BrcB',tipo:'B', piezas:'3'}
@@ -34,6 +35,7 @@ define ['controllers', 'exampleResource', 'ejemDirectiva'], (controllers) -> #es
      alert text
     $scope.prueba = (u,p) ->
      alert "registering user..."+u+"with password..."+p
+    $scope.variable_cambiar=true;
     
      
      

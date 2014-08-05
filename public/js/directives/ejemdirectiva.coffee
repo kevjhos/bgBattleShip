@@ -11,6 +11,9 @@ define ['directives'], (directives) ->
       scope.test = () ->
       	if attrs.tipo is 'bar1'
       	 guardarTipo 'bar1'
+
+         #element.attribute
+         
       	
 
             
