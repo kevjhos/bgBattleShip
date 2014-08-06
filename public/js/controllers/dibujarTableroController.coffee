@@ -31,6 +31,8 @@ define ['controllers', 'exampleResource', 'ejemDirectiva'], (controllers) -> #es
     $scope.list34 = {}
     $scope.usuario
     $scope.password
+    $scope.celdasancho = [1..9]
+    $scope.celdasalto = [1..7]
     $scope.mensaje = (text) ->
      alert text
     $scope.prueba = (u,p) ->

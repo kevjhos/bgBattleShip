@@ -12,14 +12,20 @@
       <p>Estamos {{hola}}, esperamos su comprension </p>
 
         <div ng-include="'menu.html'" scope="" onload=""></div>
+          
           <div ng-init="checked2=false">
               <label>
                 <input type="checkbox" ng-model="checked2" style="float:left; margin-right:10px;"> Tablero para Disparar...
               </label>
+          
           <div class="check-element sample-show-hide" ng-show="checked2" style="clear:both;">
             <div ng-include="'/tablero_disparo.html'" scope="" onload=""></div>
             </div>
           </div>
+
+          
+      
+      <div ng-include="'/tablero_board.html'" scope="" onload=""></div>
       <div ng-include="'/extra.html'" scope="" onload=""></div>
       <div ng-include="'/barco.html'" scope="" onload=""></div>
       

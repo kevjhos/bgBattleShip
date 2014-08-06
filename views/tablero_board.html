@@ -1,0 +1,15 @@
+<div class="div" ng-controller="tableController">
+    <table>
+    	TABLA	
+        <tr ng-repeat="row in celdasalto">
+            <td ng-repeat="column in celdasancho">
+                <div tipo="{{row}}{{column}}" class="celda" data-drop="true"  data-jqyoui-options ng-model="list1" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+
+                	<div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list11" jqyoui-draggable ng-hide="!list11.title">{{list11.title}}</div>
+
+                	</div>
+                </div>
+            </td>
+        </tr>
+    </table>
+   </div>
