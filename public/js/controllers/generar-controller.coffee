@@ -50,9 +50,9 @@ define ['controllers'], (controllers) ->
         x = 0
         while x < celdas_x
           if ispc
-            document.write "<a href=\"javascript:cuadroClick(" + y + "," + x + ");\"><img name=\"jug2" + y + "_" + x + "\" src=\"../../images/batt100.gif\" width=40 height=40></a>"
+            document.write '<a href="javascript:cuadroClick(' + y + ',' + x + ');"><img name="jug2' + y + '_' + x + '" src="../../images/batt100.gif" width=40 height=40></a>'
           else
-            document.write "<a href=\"javascript:void(0);\"><img name=\"jug1" + y + "_" + x + "\" src=\"../../images/batt" + jugador_1[y][x][0] + ".gif\" width=40 height=40></a>"
+            document.write '<a href="javascript:void(0);"><img name="jug1' + y + "_" + x + "\" src=\"../../images/batt" + jugador_1[y][x][0] + ".gif\" width=40 height=40></a>"
           ++x
         document.write "<br>"
       ++y
