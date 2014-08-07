@@ -27,6 +27,8 @@ require.config
     exampleService: 'services/example-service'
     exampleResource: 'services/example-resource'
     playerService: 'services/players-service'
+    datosAlias: 'services/datos'
+
 
   #Angular directives
     exampleDirective: 'directives/example-directive'

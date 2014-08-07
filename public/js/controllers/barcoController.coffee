@@ -1,5 +1,5 @@
-define ['controllers', 'barcoDirectiva'], (controllers) ->
-  controllers.controller 'barcoController', ['$scope', ($scope) ->
+define ['controllers', 'barcoDirectiva','datosAlias'], (controllers) ->
+  controllers.controller 'barcoController', ['$scope', 'datos', ($scope, datos) ->
     
     $scope.list1 = {id:'1',title: 'BrcA',tipo:'A', piezas:'4'}
     $scope.list2 = {id:'2',title: 'BrcB',tipo:'B', piezas:'3'}
@@ -12,9 +12,10 @@ define ['controllers', 'barcoDirectiva'], (controllers) ->
     $scope.list9 = {id:'9',title: 'BrcD',tipo:'D', piezas:'1'}
     $scope.list10 = {id:'10',title: 'BrcD',tipo:'D', piezas:'1'}
     $scope.guardarBarco = (lista) ->
+     datos.shipSize = lista
      switch lista
         when '1'
-         alert 'barco size'+lista 
+         alert 'barco size'+lista
         when '2'
          alert 'barco size'+lista 
         when '3'

@@ -3,11 +3,11 @@
     	TABLA 	
         <tr ng-repeat="row in celdasalto">
             <td ng-repeat="column in celdasancho">
-                <div tipo="{{row}}{{column}}" class="celda" data-drop="true"  data-jqyoui-options ng-model="list35" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+                <div tipo="{{row}}{{column}}" class="celda" data-drop="true"  data-jqyoui-options ng-model="list35" jqyoui-droppable="{onDrop:test($event)}" estado='vacio' ejem-directiva>
 
-                	<div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list35" jqyoui-draggable ng-hide="!list35.title">{{list35.title}} {{desk}}</div>
+                	<div class="btn btn-success" jqyoui-draggable="{multiple:true, animate:true}" data-drag="false" data-jqyoui-options ng-model="list35" jqyoui-draggable ng-hide="!list35.title">{{list35.title}} {{desk}}</div>
 
-                	</div>
+                    </div>
                 </div>
             </td>
         </tr>

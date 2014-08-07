@@ -30,7 +30,7 @@ define ['controllers', 'exampleResource', 'ejemDirectiva'], (controllers) -> #es
      alert "registering user..."+u+"with password..."+p
     $scope.mostrar = 'algo'
     $scope.desk = ''
-    $scope.variable_cambiar=true
+    $scope.bandera=$scope.list35
 
     
 

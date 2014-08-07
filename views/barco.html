@@ -6,11 +6,10 @@
            data-jqyoui-options="{revert: 'invalid'}"
            ng-model="list1"
            barco"{{list1.id}}"
-           jqyoui-draggable="{animate:true}"
+           jqyoui-draggable="{animate:true, onDrag:almover($event)}"
            ng-hide="!list1.title"
            ng-click="guardarBarco('4')"
-           
-           
+           barco-directiva
            >
            {{list1.title}}
       {{list1.id}}</div>
@@ -19,17 +18,12 @@
             style='height:50px; width:60px'
             data-drag="true"
             barco"{{list2.id}}"
-            data-jqyoui-options="{revert: 'invalid'}"
-            jqyoui-draggable="{animate:true}"
+            data-jqyoui-options="{revert: true}"
+            jqyoui-draggable="{animate:true, onDrag:almover($event)}"
             ng-model="list2"
             ng-hide="!list2.title"
             ng-click="guardarBarco('3')"
-            
-            
-            
-            
-
-      >{{list2.title}}{{list2.id}}</div>
+            barco-directiva>{{list2.title}}{{list2.id}}</div>
       
       <div class="btn btn-primary"
                  style='height:50px; width:60px'
