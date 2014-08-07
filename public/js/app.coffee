@@ -11,7 +11,7 @@ define [
  "ngDragDrop"
  "dibujarTableroController"
  "addUserController"
- 
+ "barcoController"
 ], (angular) ->
   battleShipsApp = angular.module "battleShipsApp", [
     "ngRoute"
@@ -38,6 +38,7 @@ define [
   , ($routeProvider) ->
       $routeProvider.when("/home",
         templateUrl: "home.html"
+         
       ).otherwise
         redirectTo: "/main.html"
   ]

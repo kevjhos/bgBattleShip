@@ -21,6 +21,7 @@ require.config
     exampleController: 'controllers/persons-controller'
     dibujarTableroController: 'controllers/dibujarTableroController'
     addUserController: 'controllers/adduser-controller'
+    barcoController: 'controllers/barcoController'
 
   #Angular services
     exampleService: 'services/example-service'
@@ -31,6 +32,7 @@ require.config
     exampleDirective: 'directives/example-directive'
     boardDirective: 'directives/board-directive'
     ejemDirectiva: 'directives/ejemdirectiva'
+    barcoDirectiva: 'directives/barcoDirectiva'
 
 
   #CSS styles
