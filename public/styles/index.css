@@ -117,3 +117,6 @@ ul li
   border-radius: 15px;
   float: right;
 }
+.my-class {
+    border: 3px solid blue;
+}

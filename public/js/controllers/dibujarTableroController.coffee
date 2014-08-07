@@ -20,28 +20,16 @@ define ['controllers', 'exampleResource', 'ejemDirectiva'], (controllers) -> #es
     $scope.list25 = {}
     $scope.list34 = {}
     $scope.list35 = {}
-    $scope.usuario
-    $scope.password
-    $scope.celdasancho = [1..9]
-    $scope.celdasalto = [1..7]
+    $scope.usuario=""
+    $scope.password=""
+    $scope.celdasancho = [1..10]
+    $scope.celdasalto = [1..10]
     $scope.mensaje = (text) ->
      alert text
     $scope.prueba = (u,p) ->
-    # alert "registering user..."+u+"with password..."+p
-<<<<<<< HEAD
-  ]
-=======
+      alert "registering user..."+u+"with password..."+p
     $scope.mostrar = 'algo'
     $scope.desk = ''
-    $scope.variable_cambiar=true
-
-    
-
-     
-     
-
-    
-
     #resourceExample.get (serverResponse) ->
      # if serverResponse.data?   
       	
@@ -55,4 +43,4 @@ define ['controllers', 'exampleResource', 'ejemDirectiva'], (controllers) -> #es
     
 
   ]
->>>>>>> develop
+

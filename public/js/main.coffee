@@ -33,6 +33,7 @@ require.config
     boardDirective: 'directives/board-directive'
     ejemDirectiva: 'directives/ejemdirectiva'
     barcoDirectiva: 'directives/barcoDirectiva'
+    dispdirectiva: 'directives/disparardirective'
 
 
   #CSS styles

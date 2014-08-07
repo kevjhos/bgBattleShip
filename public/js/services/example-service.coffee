@@ -4,7 +4,7 @@ define ['services'], (services) ->
     limiteAncho=7
 
     tableroSetLimite = (valorx,valory) ->
-     limiteAncho=varlox
+     limiteAncho=valorx
      limiteAlto=valory
     getLimiteAncho= () ->
      return limiteAncho   

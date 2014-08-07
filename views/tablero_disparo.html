@@ -1,4 +1,4 @@
-<table ng-controller="tableController">
+<!--<table ng-controller="tableController">
 
 <tr id="row1">
   <td>
@@ -389,4 +389,20 @@
 
 </tr>
 
+</table>-->
+
+<div class="div" ng-controller="tableController">
+    <table>
+        TABLA
+        <tr ng-repeat="row in celdasalto">
+            <td ng-repeat="column in celdasancho">
+                <div ng-class="{'my-class':boolChangeClass}" tipo="{{row}}{{column}}" class="celda" ng-click=""  data-jqyoui-options ng-model="list35" jqyoui-droppable="" ejem-directiva clickdisparo>
+
+                    <div class="celda" ng-class="{'my-class':boolChangeClass}" jqyoui-draggable="" data-drag="" data-jqyoui-options ng-model="list35" jqyoui-draggable clickdisparo></div>
+
+                </div>
+</div>
+</td>
+</tr>
 </table>
+</div>

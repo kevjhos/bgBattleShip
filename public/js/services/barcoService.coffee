@@ -14,5 +14,5 @@ define ['services'], (services) ->
 	  setSize: (nsize) ->
 	   @size = nsize_value
 	  setModePos: (nmode) ->
-       @modePos = nmode
-   ]
+     @modePos = nmode
+  ]

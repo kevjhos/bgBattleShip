@@ -1,4 +1,4 @@
-<table ng-controller="tableController">
+<!--<table ng-controller="tableController">
 
 <tr id="row1">
   <td>
@@ -392,3 +392,19 @@
 
 </table>
 
+-->
+<div class="div" ng-controller="tableController">
+    <table>
+        TABLA
+        <tr ng-repeat="row in celdasalto">
+            <td ng-repeat="column in celdasancho">
+                <div tipo="{{row}}{{column}}" class="celda" data-drop="true"  data-jqyoui-options ng-model="list35" jqyoui-droppable="" ejem-directiva>
+
+                    <div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list35" jqyoui-draggable ></div>
+
+                </div>
+</div>
+</td>
+</tr>
+</table>
+</div>
