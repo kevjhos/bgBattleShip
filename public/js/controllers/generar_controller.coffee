@@ -52,12 +52,15 @@ define ['controllers'], (controllers) ->
         x = 0
         while x < celdas_x
           if ispc
+            #alert("entra celda 1")
             document.write '<a href="javascript:cuadroClick(' + y + ',' + x + ');"><img name="jug2' + y + '_' + x + '" src="../../images/batt100.gif" width=40 height=40></a>'
           else
+            #alert("entra celda 2")
             document.write '<a href="javascript:void(0);"><img name="jug1' + y + '_' + x + '" src="../../images/batt' + jugador_1[y][x][0] + '.gif" width=40 height=40></a>'
           ++x
         document.write '<br>'
-      ++y
+        ++y
+      alert("termina celdas")
 
 
     #Manejador para hacer clic en un cuadro
@@ -302,8 +305,10 @@ define ['controllers'], (controllers) ->
       alert("pasa 22222222")
       document.write '<center><table><tr><td align="center"><p class="heading">JUGADOR 2</p></td>' + '<td align="center"><p class="heading">JUGADOR 1</p></td></tr>' + '<tr><td><div>'
       mostrarCelda true
+      alert("mostrar 111111")
       document.write '</div></td><td><div>'
       mostrarCelda false
+      alert("mostrar 222222")
       document.write '</div></td></tr><tr>' + '<td align="center">Campo Contrincante</td><td align="center">Su Campo</td></tr></table></center>'
       actualizarEstado()
       setInterval 'setStatus();', 5000
