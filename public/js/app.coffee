@@ -12,6 +12,8 @@ define [
  "dibujarTableroController"
  "addUserController"
  "barcoController"
+  "generarController"
+
 ], (angular) ->
   battleShipsApp = angular.module "battleShipsApp", [
     "ngRoute"

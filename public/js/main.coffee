@@ -22,6 +22,7 @@ require.config
     dibujarTableroController: 'controllers/dibujarTableroController'
     addUserController: 'controllers/adduser-controller'
     barcoController: 'controllers/barcoController'
+    generarController: 'controllers/generar_controller'
 
   #Angular services
     exampleService: 'services/example-service'
@@ -33,6 +34,7 @@ require.config
     boardDirective: 'directives/board-directive'
     ejemDirectiva: 'directives/ejemdirectiva'
     barcoDirectiva: 'directives/barcoDirectiva'
+    disparDirectiva:  'directives/disparar_directiva'
 
 
   #CSS styles
