@@ -9,7 +9,8 @@
         <li><a href="#/adduser">Agregar Usuario <INS></INS></a></li>
       </ul>
         <canvas id="tablero" width="300" height="150" x="50" y="50" board>Tablero</canvas>
-      <p>Estamos {{hola}}, esperamos su comprension </p>
+      <p >Estamos {{hola}}, esperamos su comprension </p>
+      
 
         <div ng-include="'menu.html'" scope="" onload=""></div>
           
@@ -24,12 +25,9 @@
           </div>
 
           
-      
+      <div ng-include="'/barco.html'" scope="" onload=""></div> 
       <div ng-include="'/tablero_board.html'" scope="" onload=""></div>
       <div ng-include="'/extra.html'" scope="" onload=""></div>
-      <div ng-include="'/barco.html'" scope="" onload=""></div>
-      
-      
 
   </div>
 

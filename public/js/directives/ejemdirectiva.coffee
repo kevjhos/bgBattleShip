@@ -1,16 +1,17 @@
 'use strict'
-class Celda
- celdaActiva
- guardarTipo = (x) ->
-  alert x 
-
 define ['directives'], (directives) ->
   directives.directive 'ejemDirectiva', () ->
     restrict: 'AEC'
     link: (scope, element, attrs) ->
       scope.test = () ->
-      	if attrs.tipo is 'cel12'
-      	 guardarTipo 'bar1'
+       switch attrs.tipo
+        when '12'
+         scope.desk='celda 12'
+        when '22'
+         scope.desk='celda 22'
+       
+
+
 
          #element.attribute
          

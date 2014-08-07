@@ -1,19 +1,33 @@
-<div class="btn btn-primary"
+<div ng-controller="barcoController" >
+ <div >
+  <div class="btn btn-primary"
            style='height:50px; width:60px'
            data-drag="true"
            data-jqyoui-options="{revert: 'invalid'}"
            ng-model="list1"
+           barco"{{list1.id}}"
            jqyoui-draggable="{animate:true}"
-           ng-hide="!list1.title">
+           ng-hide="!list1.title"
+           ng-click="guardarBarco('4')"
+           
+           
+           >
            {{list1.title}}
       {{list1.id}}</div>
+      
       <div class="btn btn-primary"
             style='height:50px; width:60px'
             data-drag="true"
+            barco"{{list2.id}}"
             data-jqyoui-options="{revert: 'invalid'}"
             jqyoui-draggable="{animate:true}"
             ng-model="list2"
             ng-hide="!list2.title"
+            ng-click="guardarBarco('3')"
+            
+            
+            
+            
 
       >{{list2.title}}{{list2.id}}</div>
       
@@ -23,7 +37,8 @@
            data-jqyoui-options="{revert: 'invalid'}"
            ng-model="list3"
            jqyoui-draggable="{animate:true}"
-           ng-hide="!list3.title">
+           ng-hide="!list3.title"
+           ng-click="guardarBarco('3')">
           {{list3.title}}
       {{list3.id}}</div>
 
@@ -33,7 +48,8 @@
            data-jqyoui-options="{revert: 'invalid'}"
            ng-model="list4"
            jqyoui-draggable="{animate:true}"
-           ng-hide="!list4.title">
+           ng-hide="!list4.title"
+           ng-click="guardarBarco('2')">
           {{list4.title}}
       {{list4.id}}</div>
       <div class="btn btn-primary"
@@ -42,7 +58,8 @@
            data-jqyoui-options="{revert: 'invalid'}"
            ng-model="list5"
            jqyoui-draggable="{animate:true}"
-           ng-hide="!list5.title">
+           ng-hide="!list5.title"
+           ng-click="guardarBarco('2')">
           {{list5.title}}
       {{list5.id}}</div>
       <div class="btn btn-primary"
@@ -51,7 +68,8 @@
            data-jqyoui-options="{revert: 'invalid'}"
            ng-model="list6"
            jqyoui-draggable="{animate:true}"
-           ng-hide="!list6.title">
+           ng-hide="!list6.title"
+           ng-click="guardarBarco('2')">
           {{list6.title}}
       {{list6.id}}</div>
       <div class="btn btn-primary"
@@ -60,7 +78,8 @@
            data-jqyoui-options="{revert: 'invalid'}"
            ng-model="list7"
            jqyoui-draggable="{animate:true}"
-           ng-hide="!list7.title">
+           ng-hide="!list7.title"
+           ng-click="guardarBarco('1')">
           {{list7.title}}
       {{list7.id}}</div>
 
@@ -70,7 +89,8 @@
            data-jqyoui-options="{revert: 'invalid'}"
            ng-model="list8"
            jqyoui-draggable="{animate:true}"
-           ng-hide="!list8.title">
+           ng-hide="!list8.title"
+           ng-click="guardarBarco('1')">
           {{list8.title}}
       {{list8.id}}</div>
 
@@ -80,7 +100,8 @@
            data-jqyoui-options="{revert: 'invalid'}"
            ng-model="list9"
            jqyoui-draggable="{animate:true}"
-           ng-hide="!list9.title">
+           ng-hide="!list9.title"
+           ng-click="guardarBarco('1')">
           {{list9.title}}
       {{list9.id}}</div>
 
@@ -90,6 +111,11 @@
            data-jqyoui-options="{revert: 'invalid'}"
            ng-model="list10"
            jqyoui-draggable="{animate:true}"
-           ng-hide="!list10.title">
+           ng-hide="!list10.title"
+           ng-click="guardarBarco('1')">
           {{list10.title}}
-      {{list10.id}}</div>
+      {{list10.id}}
+      </div>
+
+      </div>
+  </div>

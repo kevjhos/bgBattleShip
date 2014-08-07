@@ -11,7 +11,7 @@ define [
  "ngDragDrop"
  "dibujarTableroController"
  "addUserController"
- 
+ "barcoController"
 ], (angular) ->
   battleShipsApp = angular.module "battleShipsApp", [
     "ngRoute"

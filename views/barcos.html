@@ -1,0 +1,20 @@
+<div class="div" ng-controller="barcoController">
+    <table>
+    	TABLA 	
+        <tr>
+            <td ng-repeat="brc in barcos">
+                <div class="btn btn-primary"
+                   style='height:50px; width:60px'
+                   data-drag="true"
+                   data-jqyoui-options="{revert: 'invalid'}"
+                   ng-model="list+'{{brc}}'"
+                   barco="{{brc}}"
+                   jqyoui-draggable="{animate:true, onStart:almover($event)}"
+                   ng-hide="!list1.title"
+                   barco-directiva>
+                   {{list1.title}} {{list1.id}}
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
