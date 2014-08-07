@@ -1,5 +1,5 @@
-define ['controllers', 'generarResource'], (controllers) ->
-  controllers.controller 'generar', ['$scope', 'resourceGenerar', ($scope, resourceGenerar) ->
+define ['controllers'], (controllers) ->
+  controllers.controller 'generarController', ['$scope',($scope) ->
 
     #Informacion usada para dibujar naves
     nave =  [[[1,5], [1,2,5], [1,2,3,5], [1,2,3,4,5]], [[6,10], [6,7,10], [6,7,8,10], [6,7,8,9,10]]];
@@ -19,7 +19,7 @@ define ['controllers', 'generarResource'], (controllers) ->
     vidas_jugador_1 = 0
     vidas_jugador_2 = 0
     bandera_turno=true
-
+    $scope.bandera="franklin"
     #Funcion para precargar todas las imagenes, para evitar demoras durante el juego
     precarga = [];
     precargaImagen = ->
@@ -38,10 +38,10 @@ define ['controllers', 'generarResource'], (controllers) ->
     setImagen = (y, x, id, ispc) ->
       if ispc
         jugador_2[y][x][0] = id
-        document.images["jug2" + y + "_" + x].src = "../images/batt" + id + ".gif"
+        document.images["jug2" + y + "_" + x].src = "../../images/batt" + id + ".gif"
       else
         jugador_1[y][x][0] = id
-        document.images["jug1" + y + "_" + x].src = "images/batt" + id + ".gif"
+        document.images["jug1" + y + "_" + x].src = "../../images/batt" + id + ".gif"
 
     #Funcion para insertar codigo HTML para un cuadro
     mostrarCelda = (ispc) ->
@@ -50,9 +50,9 @@ define ['controllers', 'generarResource'], (controllers) ->
         x = 0
         while x < celdas_x
           if ispc
-            document.write "<a href=\"javascript:cuadroClick(" + y + "," + x + ");\"><img name=\"jug2" + y + "_" + x + "\" src=\"images/batt100.gif\" width=40 height=40></a>"
+            document.write "<a href=\"javascript:cuadroClick(" + y + "," + x + ");\"><img name=\"jug2" + y + "_" + x + "\" src=\"../../images/batt100.gif\" width=40 height=40></a>"
           else
-            document.write "<a href=\"javascript:void(0);\"><img name=\"jug1" + y + "_" + x + "\" src=\"images/batt" + jugador_1[y][x][0] + ".gif\" width=40 height=40></a>"
+            document.write "<a href=\"javascript:void(0);\"><img name=\"jug1" + y + "_" + x + "\" src=\"../../images/batt" + jugador_1[y][x][0] + ".gif\" width=40 height=40></a>"
           ++x
         document.write "<br>"
       ++y
@@ -244,7 +244,7 @@ define ['controllers', 'generarResource'], (controllers) ->
             while j < len
               if cuadro[cy][cx][0] < 100
                 ok = false
-                break
+
               cx += dx
               cy += dy
               ++j
@@ -271,7 +271,7 @@ define ['controllers', 'generarResource'], (controllers) ->
       cuadro
 
     #Inicio de Juego!
-    empezarJuego = ->
+    $scope.empezarJuego = ->
       precargaImagen()
       jugador_1 = configurarJugador(false)
       jugador_2 = configurarJugador(true)

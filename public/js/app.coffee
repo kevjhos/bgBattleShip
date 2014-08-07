@@ -10,9 +10,8 @@ define [
  "services"
  "ngDragDrop"
  "dibujarTableroController"
- "generarAleatorio"
  "addUserController"
- "generar-controller"
+ "generarController"
  
 ], (angular) ->
   battleShipsApp = angular.module "battleShipsApp", [

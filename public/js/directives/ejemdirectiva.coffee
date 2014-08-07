@@ -1,6 +1,6 @@
 'use strict'
 class Celda
- celdaActiva
+ @celdaActiva = 0
  guardarTipo = (x) ->
   @celdaActiva = x;
 
