@@ -2,16 +2,7 @@ define ['controllers', 'exampleResource', 'ejemDirectiva'], (controllers) -> #es
   controllers.controller 'tableController', ['$scope', 'resourceExample', ($scope, resourceExample)->
 
     $scope.hola='Dibujando Tablero'
-    $scope.list1 = {id:'1',title: 'BrcA',tipo:'A', piezas:'4'}
-    $scope.list2 = {id:'2',title: 'BrcB',tipo:'B', piezas:'3'}
-    $scope.list3 = {id:'3',title: 'BrcB',tipo:'B', piezas:'3'}
-    $scope.list4 = {id:'4',title: 'BrcC',tipo:'C', piezas:'2'}
-    $scope.list5 = {id:'5',title: 'BrcC',tipo:'C', piezas:'2'}
-    $scope.list6 = {id:'6',title: 'BrcC',tipo:'C', piezas:'2'}
-    $scope.list7 = {id:'7',title: 'BrcD',tipo:'D', piezas:'1'}
-    $scope.list8 = {id:'8',title: 'BrcD',tipo:'D', piezas:'1'}
-    $scope.list9 = {id:'9',title: 'BrcD',tipo:'D', piezas:'1'}
-    $scope.list10 = {id:'10',title: 'BrcD',tipo:'D', piezas:'1'}
+    #$scope.list100 = exampleServices.variable1(2) 'exampleService', exampleServices
     $scope.list11 = {}
     $scope.list12 = {}
     $scope.list13 = {}
@@ -28,13 +19,21 @@ define ['controllers', 'exampleResource', 'ejemDirectiva'], (controllers) -> #es
     $scope.list24 = {}
     $scope.list25 = {}
     $scope.list34 = {}
+    $scope.list35 = {}
     $scope.usuario
     $scope.password
+    $scope.celdasancho = [1..9]
+    $scope.celdasalto = [1..7]
     $scope.mensaje = (text) ->
      alert text
     $scope.prueba = (u,p) ->
      alert "registering user..."+u+"with password..."+p
+    $scope.mostrar = 'algo'
+    $scope.desk = ''
+    $scope.variable_cambiar=true
+
     
+
      
      
 
