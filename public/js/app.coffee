@@ -12,6 +12,7 @@ define [
  "dibujarTableroController"
  "generarAleatorio"
  "addUserController"
+ "generar-controller"
  
 ], (angular) ->
   battleShipsApp = angular.module "battleShipsApp", [

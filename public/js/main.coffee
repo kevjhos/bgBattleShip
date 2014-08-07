@@ -21,7 +21,7 @@ require.config
     exampleController: 'controllers/persons-controller'
     dibujarTableroController: 'controllers/dibujarTableroController'
     addUserController: 'controllers/adduser-controller'
-    generarAleatorio:  'controllers/generarAleatorio'
+    generar-controller: 'controllers/generar-controller'
 
   #Angular services
     exampleService: 'services/example-service'
