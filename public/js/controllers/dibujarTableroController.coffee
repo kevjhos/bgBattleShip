@@ -3,22 +3,6 @@ define ['controllers', 'exampleResource', 'ejemDirectiva'], (controllers) -> #es
 
     $scope.hola='Dibujando Tablero'
     #$scope.list100 = exampleServices.variable1(2) 'exampleService', exampleServices
-    $scope.list11 = {}
-    $scope.list12 = {}
-    $scope.list13 = {}
-    $scope.list14 = {}
-    $scope.list15 = {}
-    $scope.list16 = {}
-    $scope.list17 = {}
-    $scope.list18 = {}
-    $scope.list19 = {}
-    $scope.list20 = {}
-    $scope.list21 = {}
-    $scope.list22 = {}
-    $scope.list23 = {}
-    $scope.list24 = {}
-    $scope.list25 = {}
-    $scope.list34 = {}
     $scope.list35 = {}
     $scope.usuario
     $scope.password
@@ -31,7 +15,12 @@ define ['controllers', 'exampleResource', 'ejemDirectiva'], (controllers) -> #es
     $scope.mostrar = 'algo'
     $scope.desk = ''
     $scope.bandera=$scope.list35
-
+    $scope.clase = "nomarcado"
+    $cambiarClase = ->
+     if $scope.clase is 'nomarcado'
+      $scope.clase = 'marcado'
+     else
+      $scope.clase = 'nomarcado'
     
 
      

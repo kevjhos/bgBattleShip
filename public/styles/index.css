@@ -9,8 +9,8 @@ body {
 	display: block;
 	height: auto;
 	max-width: 100%;
-  width: 80px;
-  height: 50px;
+  width: 50px;
+  height: 30px;
 	padding: 4px;
 	line-height: 1.428571429;
 	background-color: #4E577A;
@@ -116,4 +116,19 @@ ul li
   -webkit-border-radius: 15px;
   border-radius: 15px;
   float: right;
+}
+
+.marcado {
+    color: rgb(255, 255, 255);
+    background-color: rgb(202, 139, 202);
+    border-color: rgb(53, 126, 189);
+}
+.nomarcado {
+    color: rgb(255, 255, 255);
+    background-color: rgb(202, 139, 202);
+    border-color: rgb(53, 126, 189);
+}
+.barco {
+    
+    border-color: rgb(53, 126, 189);
 }

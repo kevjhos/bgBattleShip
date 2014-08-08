@@ -5,11 +5,138 @@
             <td ng-repeat="column in celdasancho">
                 <div tipo="{{row}}{{column}}" class="celda" data-drop="true"  data-jqyoui-options ng-model="list35" jqyoui-droppable="{onDrop:test($event)}" estado='vacio' ejem-directiva>
 
-                	<div class="btn btn-success" jqyoui-draggable="{multiple:true, animate:true}" data-drag="false" data-jqyoui-options ng-model="list35" jqyoui-draggable ng-hide="!list35.title">{{list35.title}} {{desk}}</div>
+                	<div class="btn btn-success" style='height:20px; width:20px;'jqyoui-draggable="{multiple:true, animate:true}" data-drag="false" data-jqyoui-options ng-model="list35" jqyoui-draggable ng-hide="!list35.title"></div>
 
                     </div>
                 </div>
             </td>
         </tr>
     </table>
+ <div class="div" ng-controller="barcoController" >
+  <div class="barco"
+           style='height:50px; width:60px;'
+           data-drag="true"
+           data-jqyoui-options="{revert: 'invalid'}"
+           ng-model="list1"
+           barco="{{list1.id}}"
+           jqyoui-draggable="{animate:true, onStart:almover(),index:1}"
+           ng-hide="!list1.title"
+           ng-click="sizeBarco('4')"
+           >
+           <img align="left" style="float:inherit;" ng-src="{{list1.imagen}}" width="250px" height="60px" style=''>
+           
+      </div>
+    
+      
+      <div class="barco"
+           style='height:50px; width:60px;'
+           data-drag="true"
+           data-jqyoui-options="{revert: 'invalid'}"
+           ng-model="list2"
+           barco="{{list2.id}}"
+           jqyoui-draggable="{animate:true, onStart:almover(),index:2}"
+           ng-hide="!list2.title"
+           ng-click="sizeBarco('3')"
+           >
+           <img align="left" style="float:inherit;" ng-src="{{list2.imagen}}" width="200px" height="50px">
+           
+      </div>
+     
+     
+      <div class="barco"
+           style='height:50px; width:60px'
+           data-drag="true"
+           data-jqyoui-options="{revert: 'invalid'}"
+           ng-model="list3"
+           jqyoui-draggable="{animate:true}"
+           ng-hide="!list3.title"
+           ng-click="sizeBarco('3')">
+          <img align="left" style="float:inherit;" ng-src="{{list3.imagen}}" width="200px" height="50px"></div>
+          
+      
+      <div class="barco"
+                 style='height:50px; width:60px'
+           data-drag="true"
+           data-jqyoui-options="{revert: 'invalid'}"
+           ng-model="list4"
+           jqyoui-draggable="{animate:true}"
+           ng-hide="!list4.title"
+           ng-click="sizeBarco('2')">
+          <img align="left" style="float:inherit;" ng-src="{{list4.imagen}}" width="150px" height="60px" style=''>
+          </div>
+          
+    
+      <div class="barco"
+                 style='height:50px; width:60px'
+           data-drag="true"
+           data-jqyoui-options="{revert: 'invalid'}"
+           ng-model="list5"
+           jqyoui-draggable="{animate:true}"
+           ng-hide="!list5.title"
+           ng-click="sizeBarco('2')">
+          <img align="left" style="float:inherit;" ng-src="{{list5.imagen}}" width="150px" height="50px" style=''></div>
+
+          
+
+          
+      <div class=" barco"
+                 style='height:50px; width:60px'
+           data-drag="true"
+           data-jqyoui-options="{revert: 'invalid'}"
+           ng-model="list6"
+           jqyoui-draggable="{animate:true}"
+           ng-hide="!list6.title"
+           ng-click="sizeBarco('2')">
+          <img align="left" style="float:inherit;" ng-src="{{list6.imagen}}" width="150px" height="50px" style=''>
+          </div>
+
+      
+      
+      <div class="barco"
+                 style='height:50px; width:60px'
+           data-drag="true"
+           data-jqyoui-options="{revert: 'invalid'}"
+           ng-model="list7"
+           jqyoui-draggable="{animate:true}"
+           ng-hide="!list7.title"
+           ng-click="sizeBarco('1')">
+          <img align="left" style="float:inherit;" ng-src="{{list7.imagen}}" width="100px" height="50px" style=''>
+          </div>
+        
+      
+      <div class="barco"
+           style='height:50px; width:60px'
+           data-drag="true"
+           data-jqyoui-options="{revert: 'invalid'}"
+           ng-model="list8"
+           jqyoui-draggable="{animate:true}"
+           ng-hide="!list8.title"
+           ng-click="sizeBarco('1')">
+          <img align="left" style="float:inherit;" ng-src="{{list8.imagen}}" width="100px" height="50px" style=''></div>
+          
+      
+      <div class="barco"
+           style='height:50px; width:60px'
+           data-drag="true"
+           data-jqyoui-options="{revert: 'invalid'}"
+           ng-model="list9"
+           jqyoui-draggable="{animate:true}"
+           ng-hide="!list9.title"
+           ng-click="sizeBarco('1')">
+          <img align="left" style="float:inherit;" ng-src="{{list9.imagen}}" width="100px" height="50px" style=''></div>
+          
+       
+      <div class="barco"
+           style='height:50px; width:60px'
+           data-drag="true"
+           data-jqyoui-options="{revert: 'invalid'}"
+           ng-model="list10"
+           jqyoui-draggable="{animate:true}"
+           ng-hide="!list10.title"
+           ng-click="sizeBarco('1')">
+          <img align="left" style="float:inherit;" ng-src="{{list10.imagen}}" width="100px" height="50px" style=''>
+      </div>
+    
+    
+      </div>
    </div>

@@ -5,22 +5,26 @@ define ['directives'], (directives) ->
     link: (scope, element, attrs) ->
       scope.test = () ->
         currentElement = element
-        datos.shipSize = 3
+        auxelem= (parseInt datos.shipSize) - 1
+        puntoX= datos.anclaX
+        puntoY= datos.anclaY + 1
+        datos.ubicacion = attrs.tipo
+        #datos.shipSize = 3
         puntero=1
-        while datos.shipSize > 0
+        while auxelem > 0
           tipo = (parseInt attrs.tipo) + puntero
           currentElement = $( "div[tipo= " + tipo + "]" )
-          aux = '1'
-          aux2 = tipo % 10
           valor = currentElement.attr 'tipo'
-          if  valor is aux+''+aux2
+          #varY = puntoY + puntero
+          if  valor is puntoX+''+puntoY
            currentElement.attr 'estado', 'usado'
            $(currentElement.children()[0]).removeClass 'ng-hide'
            puntero = puntero + 1
-           datos.shipSize =  datos.shipSize - 1
+           auxelem =  auxelem - 1
+           puntoY = puntoY + 1
           else
            puntero = puntero + 1
-           datos.shipSize =  datos.shipSize - 1
+           auxelem =  auxelem - 1
           
                       
   ]
