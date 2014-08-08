@@ -118,5 +118,6 @@ ul li
   float: right;
 }
 .my-class {
-    border: 3px solid blue;
+    border: 10px solid blue;
 }
+.bold {font-weight: bold}

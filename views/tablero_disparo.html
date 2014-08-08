@@ -388,17 +388,17 @@
   </td>
 
 </tr>
-
 </table>-->
-
 <div class="div" ng-controller="tableController">
     <table>
         TABLA
         <tr ng-repeat="row in celdasalto">
+            <a clickdisparo ng-click="toggleBold()">aqui esta</a>
             <td ng-repeat="column in celdasancho">
-                <div ng-class="{'my-class':boolChangeClass}" tipo="{{row}}{{column}}" class="celda" ng-click=""  data-jqyoui-options ng-model="list35" jqyoui-droppable="" ejem-directiva clickdisparo>
-
-                    <div class="celda" ng-class="{'my-class':boolChangeClass}" jqyoui-draggable="" data-drag="" data-jqyoui-options ng-model="list35" jqyoui-draggable clickdisparo></div>
+                <div tipo="{{row}}{{column}}" class="celda" data-drop="true"  data-jqyoui-options ng-model="list35" jqyoui-droppable="{onDrop:test($event)}" ejem-directiva>
+                    <a class="bold" ng-del angularjs
+                       click="toggleBold()" ng-hide="false" clickdisparo >Boom!</a>
+                    <!--<div class="btn btn-success" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options ng-model="list35" jqyoui-draggable ng-hide="!list35.title">{{list35.title}} {{desk}}</div>-->
 
                 </div>
 </div>

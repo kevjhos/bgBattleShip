@@ -22,6 +22,7 @@ require.config
     dibujarTableroController: 'controllers/dibujarTableroController'
     addUserController: 'controllers/adduser-controller'
     barcoController: 'controllers/barcoController'
+    clickcontroller: 'controllers/disparotablero'
 
   #Angular services
     exampleService: 'services/example-service'
